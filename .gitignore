@@ -1,0 +1,68 @@
+# ========== Unity 기본 ==========
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+
+# ========== Unity 자동 생성 파일 ==========
+MemoryCaptures/
+Recordings/
+
+# ========== Visual Studio / Rider ==========
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# JetBrains Rider
+.idea/
+
+# ========== OS 파일 ==========
+.DS_Store
+Thumbs.db
+
+# ========== Unity Cloud Build ==========
+sysinfo.txt
+
+# ========== Addressables ==========
+ServerData/
+
+# ========== Gradle (Android) ==========
+.gradle/
+*.gradle
+
+# ========== 기타 ==========
+*.apk
+*.aab
+*.unitypackage
+
+# Crashlytics / Firebase (필요 없으면 무시)
+crashlytics-build.properties
+
+# 빌드 결과물
+*.exe
+*.apk
+*.aab
+*.ipa
+
+# 로그
+*.log
+
+# 백업 파일
+*.bak
+*.swp
+*.orig

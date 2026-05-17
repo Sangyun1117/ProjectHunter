@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ea6a1cc82e7bf04cbbdbe312fa05f14, type: 3}
+  m_Name: FullSwing
+  m_EditorClassIdentifier: 
+  skillName: "\uAC15\uD55C \uACF5\uACA9"
+  skillType: 3
+  icon: {fileID: 0}
+  effects:
+  - effect: {fileID: 11400000, guid: 8488ce474ba41a94f9a2a73faf448176, type: 2}
+    param:
+      basePower: 100
+      attackMultiplier: 10
+      abilityPowerMultiplier: 0
+      hpMultiplier: 0
+      mpMultiplier: 0
+      defenseMultiplier: 0
+      magicDefenseMultiplier: 0
+  - effect: {fileID: 11400000, guid: efc5aa48ed6177146b7bea49cb910603, type: 2}
+    param:
+      basePower: 30
+      attackMultiplier: 0
+      abilityPowerMultiplier: 1
+      hpMultiplier: 0
+      mpMultiplier: 0
+      defenseMultiplier: 0
+      magicDefenseMultiplier: 0
+  mpCost: 30
