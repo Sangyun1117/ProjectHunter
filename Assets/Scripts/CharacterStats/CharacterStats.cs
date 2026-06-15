@@ -1,5 +1,4 @@
 ﻿using System;
-using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 [System.Serializable]
@@ -16,6 +15,7 @@ public class CharacterStats : MonoBehaviour
     [Header("Combat")]
     public float attack;
     public float defense;
+    public float speed;
     public float abilityPower;
     public float magicDefense;
 
@@ -32,6 +32,7 @@ public class CharacterStats : MonoBehaviour
 
         attack = monsterData.attack;
         defense = monsterData.defense;
+        speed = monsterData.speed;
         abilityPower = monsterData.abilityPower;
     }
 
@@ -45,6 +46,7 @@ public class CharacterStats : MonoBehaviour
 
         attack = classData.attack;
         defense = classData.defense;
+        speed = classData.speed;
         abilityPower = classData.abilityPower;
     }
 
@@ -65,8 +67,10 @@ public class CharacterStats : MonoBehaviour
         OnMpChanged?.Invoke();
     }
 
-    public bool IsDead()
+    public void Dead()
     {
-        return currentHp <= 0;
+        Debug.Log($"{gameObject.name} is dead!");
+
+        SceneTransitionManager.Instance.ReturnToMapScene();
     }
 }

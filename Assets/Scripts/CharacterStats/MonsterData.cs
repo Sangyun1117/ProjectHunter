@@ -16,5 +16,7 @@ public class MonsterData : ScriptableObject
     [SerializeField]
     public float defense;
     [SerializeField]
+    public float speed;
+    [SerializeField]
     public float abilityPower;
 }

@@ -7,13 +7,13 @@ public class BattleManager : MonoBehaviour
     public static BattleManager Instance;
 
     BattlePhase battlePhase;
-    [SerializeField]
-    Player player;
-    [SerializeField]
-    Enemy enemy;
+    [SerializeField] Player player;
+    [SerializeField] Enemy enemy;
 
-    [SerializeField]
-    private BattleOverlay battleOverlay;
+    [SerializeField] private BattleOverlay battleOverlay;
+
+    [SerializeField] private SkillData nowPhaseSkill;
+    public SkillData NowPhaseSkill => nowPhaseSkill;
 
     private void Awake()
     {
@@ -63,31 +63,53 @@ public class BattleManager : MonoBehaviour
         // 턴 시작 스킬 타입 애니메이션
         yield return StartCoroutine(battleOverlay.PlaySkillFrameAnimation(playerSkill.SkillType, enemySkill.SkillType));
 
+        // 행동 순서 결정
         Character first, second;
         SkillData firstSkill, secondSkill;
 
-        first = player;
-        second = enemy;
+        if (player.Stats.speed >= enemy.Stats.speed)
+        {
+            first = player;
+            second = enemy;
+            firstSkill = playerSkill;
+            secondSkill = enemySkill;
+        }
+        else
+        {
+            first = enemy;
+            second = player;
+            firstSkill = enemySkill;
+            secondSkill = playerSkill;
+        }
 
-        firstSkill = playerSkill;
-        secondSkill = enemySkill;
+        // 스킬 취소 체크
+        bool firstCanceled = IsCanceled(firstSkill.SkillType, secondSkill.SkillType);
+        bool secondCanceled = IsCanceled(secondSkill.SkillType, firstSkill.SkillType);
 
         // 스킬 사용
-        yield return StartCoroutine(UseSkill(firstSkill, first, second));
+        if (firstCanceled == false)
+        {
+            yield return StartCoroutine(UseSkill(firstSkill, first, second));
+            yield return new WaitForSeconds(0.5f);
+            nowPhaseSkill = null;
+        }
 
-        yield return null;
-        yield return new WaitForSeconds(0.5f);
+        ///yield return null;
         // 사망 체크
         //if (player.IsDead || enemy.IsDead)
         //    yield break;
-        yield return StartCoroutine(UseSkill(secondSkill, second, first));
-        
+        if (secondCanceled == false)
+        {
+            yield return StartCoroutine(UseSkill(secondSkill, second, first));
+            nowPhaseSkill = null;
+        }
         SetBattle(BattlePhase.Select);
     }
 
     public IEnumerator UseSkill(SkillData skill, Character caster, Character target)
     {
-       // SkillData skill = caster.SkillBooks.GetEquippedSkill(skillIndex);
+        nowPhaseSkill = skill;
+        // SkillData skill = caster.SkillBooks.GetEquippedSkill(skillIndex);
 
         caster.ChangeMP(-skill.MpCost);
 
@@ -103,10 +125,20 @@ public class BattleManager : MonoBehaviour
 
         caster.animationFinished = false;
         target.animationFinished = false;
-        caster.ChangeState(BattleAnimState.Attack);
+        caster.ChangeState(skill.AnimState);
+        //caster.ChangeState(BattleAnimState.Attack);
         //target.ChangeState(BattleAnimState.Hit);
 
         yield return new WaitUntil(() => caster.animationFinished);
         yield return new WaitUntil(() => target.animationFinished);
+    }
+
+    private bool IsCanceled(SkillType attackerType, SkillType defenderType)
+    {
+        return
+            (attackerType == SkillType.Concentrate && defenderType == SkillType.Interrupt) ||
+            (attackerType == SkillType.Interrupt && defenderType == SkillType.Attack) ||
+            ((attackerType == SkillType.Interrupt || attackerType == SkillType.Attack) && defenderType == SkillType.Ultimate) ||
+            (attackerType == SkillType.Ultimate && defenderType == SkillType.Concentrate);
     }
 }

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: "\uD734\uC2DD"
   skillType: 0
+  animState: 1
   icon: {fileID: 0}
   effects:
   - effect: {fileID: 11400000, guid: 79e183661503fce4e97f9f07bb01098b, type: 2}
@@ -35,3 +36,5 @@ MonoBehaviour:
       defenseMultiplier: 0
       magicDefenseMultiplier: 0
   mpCost: 0
+  casterEffectPrefab: {fileID: 6331275906715107345, guid: b692b14d0834408448196a09407bc267, type: 3}
+  targetEffectPrefab: {fileID: 0}

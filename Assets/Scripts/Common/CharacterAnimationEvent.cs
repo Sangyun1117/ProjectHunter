@@ -53,6 +53,12 @@ public class CharacterAnimationEvent : MonoBehaviour
         targetCharacter.ChangeState(BattleAnimState.Hit);
     }
 
+    public void EndTargetAnimation()
+    {
+        targetCharacter.animationFinished = true;
+        targetCharacter.ChangeState(BattleAnimState.Idle);
+    }
+
     // 공격 시 앞으로 이동
     public void MoveForward()
     {

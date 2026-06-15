@@ -18,4 +18,5 @@ MonoBehaviour:
   maxMp: 100
   attack: 10
   defense: 0
+  speed: 5
   abilityPower: 0

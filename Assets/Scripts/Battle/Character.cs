@@ -41,5 +41,51 @@ public abstract class Character : MonoBehaviour
     {
         animator.SetInteger(AnimStateHash, (int)state);
         Debug.Log($"Changed animation state to {state}");
+        if (state == BattleAnimState.Hit)
+        {
+            //Instantiate(hitEffectPrefab, effectPos, Quaternion.identity);
+            if (BattleManager.Instance.NowPhaseSkill.TargetEffectPrefab == null)
+            {
+                return;
+            }
+
+            GameObject effect = Instantiate(BattleManager.Instance.NowPhaseSkill.TargetEffectPrefab);
+
+            if (effect.TryGetComponent(out VFXInfo vfxInfo) == true)
+            {
+                if(this is Player)
+                {
+                    vfxInfo.SpawnOnPlayer(transform);
+                }
+                else if (this is Enemy)
+                {
+                    vfxInfo.SpawnOnEnemy(transform);
+                }
+            }
+
+            //Vector3 effectPos = transform.position;
+            //Instantiate(BattleManager.Instance.NowPhaseSkill.TargetEffectPrefab, effectPos, Quaternion.identity);
+        }
+        else if (state == BattleAnimState.Attack || state == BattleAnimState.Concentrate || state == BattleAnimState.Interrupt)
+        {
+            if (BattleManager.Instance.NowPhaseSkill.CasterEffectPrefab == null)
+            {
+                return;
+            }
+
+            GameObject effect = Instantiate(BattleManager.Instance.NowPhaseSkill.CasterEffectPrefab);
+
+            if (effect.TryGetComponent(out VFXInfo vfxInfo) == true)
+            {
+                if (this is Player)
+                {
+                    vfxInfo.SpawnOnPlayer(transform);
+                }
+                else if (this is Enemy)
+                {
+                    vfxInfo.SpawnOnEnemy(transform);
+                }
+            }
+        }
     }
 }
