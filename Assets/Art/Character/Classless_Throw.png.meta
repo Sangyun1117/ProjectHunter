@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_0
+      name: Classless_Throw_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1600
-        width: 400
-        height: 400
+        y: 2413
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,20 +125,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbcc74505ea95f341a2667bf0e95a919
-      internalID: 1599472147
+      spriteID: a2e075581a0007b47891a163f1285d1e
+      internalID: 1386707263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_1
+      name: Classless_Throw_1
       rect:
         serializedVersion: 2
-        x: 400
-        y: 1600
-        width: 400
-        height: 400
+        x: 804
+        y: 2413
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3672a5bdcab3bc4e8a9077eba24c6ee
-      internalID: 817196102
+      spriteID: c0e97d3fb24c9c34180b263dcacd3395
+      internalID: -465067666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_2
+      name: Classless_Throw_2
       rect:
         serializedVersion: 2
-        x: 800
-        y: 1600
-        width: 400
-        height: 400
+        x: 1608
+        y: 2413
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fb0992600d7610449c9ae84b05adbb4
-      internalID: -744812898
+      spriteID: ae93403fa39690e4bb957b5fc87dadba
+      internalID: 1412063083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_3
+      name: Classless_Throw_3
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 1600
-        width: 400
-        height: 400
+        x: 2412
+        y: 2413
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 673bf5cfb7b7cb54ea5ccdcae8244217
-      internalID: -432806611
+      spriteID: c91d93f0f44683247b90502554cb7849
+      internalID: 1536042229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_4
+      name: Classless_Throw_4
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 1600
-        width: 400
-        height: 400
+        x: 3216
+        y: 2413
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,42 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 307db3934338b6042a5d4498a14db09d
-      internalID: 617796043
+      spriteID: 77ee9f6b3e09a8b438ae2a9430f6229e
+      internalID: 1252363468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_5
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 1600
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9852b2fbb9e47554a8d83a7060facd07
-      internalID: -226777622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_6
+      name: Classless_Throw_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 1200
-        width: 400
-        height: 400
+        y: 1609
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +235,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de833c12a1e3c8241a861f01b487d90b
-      internalID: -628581099
+      spriteID: e5473e65e0e134d4c88900892ab9148c
+      internalID: -359101194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_7
+      name: Classless_Throw_6
       rect:
         serializedVersion: 2
-        x: 400
-        y: 1200
-        width: 400
-        height: 400
+        x: 804
+        y: 1609
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8635755a757d6d447978c47ee95f5e1e
-      internalID: -1765915350
+      spriteID: b5a180b35aedaf14c9c92eb2a230262a
+      internalID: 460942652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_8
+      name: Classless_Throw_7
       rect:
         serializedVersion: 2
-        x: 800
-        y: 1200
-        width: 400
-        height: 400
+        x: 1608
+        y: 1609
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,20 +279,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ef4be8a7750f51488562905535deaf2
-      internalID: 375804785
+      spriteID: 54585b52a0af1a14db3fa605b32ae482
+      internalID: 2112791089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_9
+      name: Classless_Throw_8
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 1200
-        width: 400
-        height: 400
+        x: 2412
+        y: 1609
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,20 +301,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da80738b1ecf62d4a940d3b02fe10862
-      internalID: -870580968
+      spriteID: a148855aa537c554c966fe2c900b721b
+      internalID: 1655758701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_10
+      name: Classless_Throw_9
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 1200
-        width: 400
-        height: 400
+        x: 3216
+        y: 1609
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,42 +323,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a587f9a7afe2bc40b4b336f46d953f9
-      internalID: -1601129194
+      spriteID: 67a33e633fa38ba449a0ca9f78419ed6
+      internalID: -630383202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_11
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 1200
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88723708f420cdc42b61db17ab74fd62
-      internalID: -701157489
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_12
+      name: Classless_Throw_10
       rect:
         serializedVersion: 2
         x: 0
-        y: 800
-        width: 400
-        height: 400
+        y: 805
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,20 +345,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5dc35276815625a439387dde57cf823b
-      internalID: 478014491
+      spriteID: 89932d50b7e17614eaecc29acdb093ab
+      internalID: -962653591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_13
+      name: Classless_Throw_11
       rect:
         serializedVersion: 2
-        x: 400
-        y: 800
-        width: 400
-        height: 400
+        x: 804
+        y: 805
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -411,20 +367,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9373365d5b916964b9e8afb03cca45ba
-      internalID: 1347137484
+      spriteID: 68790b2ce3338cc4b90dfebfc1ed1237
+      internalID: 939454515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_14
+      name: Classless_Throw_12
       rect:
         serializedVersion: 2
-        x: 800
-        y: 800
-        width: 400
-        height: 400
+        x: 1608
+        y: 805
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,20 +389,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08a12838756691b4b8734d223b6f05c8
-      internalID: -692520493
+      spriteID: a34ab0f2be54a304eb507bc263cb67ec
+      internalID: 1985515913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_15
+      name: Classless_Throw_13
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 800
-        width: 400
-        height: 400
+        x: 2412
+        y: 805
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -455,20 +411,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1e56e64ce2dac34a8f144face3a122c
-      internalID: -995729613
+      spriteID: c4b622352a260ab4d8fdea3fce256e52
+      internalID: 582135939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_16
+      name: Classless_Throw_14
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 800
-        width: 400
-        height: 400
+        x: 3216
+        y: 805
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,42 +433,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17cf4ff4578b8614d97840585cb9bc6b
-      internalID: 114390260
+      spriteID: ee6d89ee31a5977488613f401f999f1e
+      internalID: -2036973884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_17
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 800
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5941372304b5a04593f4b6307281795
-      internalID: 616681486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_18
+      name: Classless_Throw_15
       rect:
         serializedVersion: 2
         x: 0
-        y: 400
-        width: 400
-        height: 400
+        y: 1
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,20 +455,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f96782b01b93fb4993d3d368d00f429
-      internalID: -957213439
+      spriteID: b9b06b9107977d5418b446878978f9a6
+      internalID: 370366306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_19
+      name: Classless_Throw_16
       rect:
         serializedVersion: 2
-        x: 400
-        y: 400
-        width: 400
-        height: 400
+        x: 804
+        y: 1
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -543,20 +477,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49fac4043f8bc394c8e8a8bbe4d20e99
-      internalID: -516680299
+      spriteID: b0a9f531057b5604eab21e901c274f0a
+      internalID: -207149416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_20
+      name: Classless_Throw_17
       rect:
         serializedVersion: 2
-        x: 800
-        y: 400
-        width: 400
-        height: 400
+        x: 1608
+        y: 1
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -565,20 +499,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 572725cadac8a8443a42263ccbbc66f5
-      internalID: 1830325887
+      spriteID: dc1dc58aa1a7f0340b5aba57773efb3f
+      internalID: -409969716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_21
+      name: Classless_Throw_18
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 400
-        width: 400
-        height: 400
+        x: 2412
+        y: 1
+        width: 803
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -587,162 +521,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb8ea5efb17c7e64285799689d94d807
-      internalID: 1233120219
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_22
-      rect:
-        serializedVersion: 2
-        x: 1600
-        y: 400
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d95273adc718804ab61605b774e210a
-      internalID: -1745431521
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_23
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 400
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91e11049ee600a0419b08d3243a0d03d
-      internalID: -1701574382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_24
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6cc96899204108f40b31d61d0a44cfcb
-      internalID: 739805852
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_25
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 0
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 311efd5e038284b46803a6d7fb208050
-      internalID: 1370040774
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_26
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 0
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 448a25584e4fd5a4a82e02c772be344f
-      internalID: -1441183947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_27
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 0
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b722b10f4fa834b4aa8420c944382794
-      internalID: 1915511397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Throw_00004_sprite-Photoroom_28
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 0
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81605e8212257ce45869518c20eef1c5
-      internalID: 1666779714
+      spriteID: 160690593e64faf49a2320dfeca59643
+      internalID: 116590173
       vertices: []
       indices: 
       edges: []
@@ -751,7 +531,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: dfb04da775195be489a43cd20540da95
+    spriteID: 1ef92412c16c41c42b8092c615551c01
     internalID: 0
     vertices: []
     indices: 
@@ -761,37 +541,27 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":5.0},"gridSpriteSize":{"x":400.0,"y":400.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":4.0},"gridSpriteSize":{"x":803.0,"y":803.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":1.0,"y":1.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Throw_00004_sprite-Photoroom_0: 1599472147
-      Throw_00004_sprite-Photoroom_1: 817196102
-      Throw_00004_sprite-Photoroom_10: -1601129194
-      Throw_00004_sprite-Photoroom_11: -701157489
-      Throw_00004_sprite-Photoroom_12: 478014491
-      Throw_00004_sprite-Photoroom_13: 1347137484
-      Throw_00004_sprite-Photoroom_14: -692520493
-      Throw_00004_sprite-Photoroom_15: -995729613
-      Throw_00004_sprite-Photoroom_16: 114390260
-      Throw_00004_sprite-Photoroom_17: 616681486
-      Throw_00004_sprite-Photoroom_18: -957213439
-      Throw_00004_sprite-Photoroom_19: -516680299
-      Throw_00004_sprite-Photoroom_2: -744812898
-      Throw_00004_sprite-Photoroom_20: 1830325887
-      Throw_00004_sprite-Photoroom_21: 1233120219
-      Throw_00004_sprite-Photoroom_22: -1745431521
-      Throw_00004_sprite-Photoroom_23: -1701574382
-      Throw_00004_sprite-Photoroom_24: 739805852
-      Throw_00004_sprite-Photoroom_25: 1370040774
-      Throw_00004_sprite-Photoroom_26: -1441183947
-      Throw_00004_sprite-Photoroom_27: 1915511397
-      Throw_00004_sprite-Photoroom_28: 1666779714
-      Throw_00004_sprite-Photoroom_3: -432806611
-      Throw_00004_sprite-Photoroom_4: 617796043
-      Throw_00004_sprite-Photoroom_5: -226777622
-      Throw_00004_sprite-Photoroom_6: -628581099
-      Throw_00004_sprite-Photoroom_7: -1765915350
-      Throw_00004_sprite-Photoroom_8: 375804785
-      Throw_00004_sprite-Photoroom_9: -870580968
+      Classless_Throw_0: 1386707263
+      Classless_Throw_1: -465067666
+      Classless_Throw_10: -962653591
+      Classless_Throw_11: 939454515
+      Classless_Throw_12: 1985515913
+      Classless_Throw_13: 582135939
+      Classless_Throw_14: -2036973884
+      Classless_Throw_15: 370366306
+      Classless_Throw_16: -207149416
+      Classless_Throw_17: -409969716
+      Classless_Throw_18: 116590173
+      Classless_Throw_2: 1412063083
+      Classless_Throw_3: 1536042229
+      Classless_Throw_4: 1252363468
+      Classless_Throw_5: -359101194
+      Classless_Throw_6: 460942652
+      Classless_Throw_7: 2112791089
+      Classless_Throw_8: 1655758701
+      Classless_Throw_9: -630383202
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
