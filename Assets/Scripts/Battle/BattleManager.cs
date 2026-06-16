@@ -31,7 +31,7 @@ public class BattleManager : MonoBehaviour
         player.Initialize();
         enemy.Initialize();
 
-        yield return StartCoroutine(battleOverlay.PlayStartAnimation());
+        yield return StartCoroutine(battleOverlay.PlayOverlayPanelAnimation(battlePhase));
 
         SetBattle(BattlePhase.Select);
     }
@@ -140,5 +140,26 @@ public class BattleManager : MonoBehaviour
             (attackerType == SkillType.Interrupt && defenderType == SkillType.Attack) ||
             ((attackerType == SkillType.Interrupt || attackerType == SkillType.Attack) && defenderType == SkillType.Ultimate) ||
             (attackerType == SkillType.Ultimate && defenderType == SkillType.Concentrate);
+    }
+
+    public IEnumerator EndBattle()
+    {
+        // 승리/패배 처리
+        if (player.IsDead)
+        {
+            // 패배 처리 로직 추가
+            Debug.Log("Player is defeated!");
+            battlePhase = BattlePhase.Lose;
+            yield return StartCoroutine(battleOverlay.PlayOverlayPanelAnimation(battlePhase));
+        }
+        else if (enemy.IsDead)
+        {
+            // 승리 처리 로직 추가
+            Debug.Log("Enemy is defeated!");
+            battlePhase = BattlePhase.Win;
+            yield return StartCoroutine(battleOverlay.PlayOverlayPanelAnimation(battlePhase));
+        }
+        // 씬 전환 등 추가 처리
+        SceneTransitionManager.Instance?.ReturnToMapScene();
     }
 }

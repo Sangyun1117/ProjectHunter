@@ -88,4 +88,6 @@ public abstract class Character : MonoBehaviour
             }
         }
     }
+
+    public bool IsDead => stats.currentHp <= 0;
 }

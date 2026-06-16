@@ -71,6 +71,6 @@ public class CharacterStats : MonoBehaviour
     {
         Debug.Log($"{gameObject.name} is dead!");
 
-        SceneTransitionManager.Instance.ReturnToMapScene();
+        StartCoroutine(BattleManager.Instance?.EndBattle());
     }
 }
