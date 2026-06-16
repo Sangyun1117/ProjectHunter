@@ -130,6 +130,8 @@ public class MapManager : MonoBehaviour
 
     private void CheckTileEvent(HexTile hexTile)
     {
+        hexTile.Explore();
+
         switch (hexTile.hexType)
         {
             case HexType.Empty:
@@ -139,26 +141,27 @@ public class MapManager : MonoBehaviour
                 Debug.Log("Start tile. No event.");
                 break;
             case HexType.Battle:
-                if(hexTile.visitCount == 0)
+                if(hexTile.visitCount == 1)
                 {
+
+                    SceneTransitionManager.Instance.LoadBattleScene();
                     Debug.Log("First time on battle tile. Prepare for a tough fight!");
                 }
                 else
                 {
                     Debug.Log("Returning to battle tile. Enemies may be weaker.");
                 }
-                SceneTransitionManager.Instance.LoadBattleScene();
                 break;
             case HexType.Boss:
-                if(hexTile.visitCount == 0)
+                if(hexTile.visitCount == 1)
                 {
+                    SceneTransitionManager.Instance.LoadBattleScene();
                     Debug.Log("First time on boss tile. Get ready for the ultimate challenge!");
                 }
                 else
                 {
                     Debug.Log("Returning to boss tile. Boss may be weaker.");
                 }
-                SceneTransitionManager.Instance.LoadBattleScene();
                 break;
         }
     }

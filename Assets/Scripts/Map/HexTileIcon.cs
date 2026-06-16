@@ -52,4 +52,12 @@ public class HexTileIcon : MonoBehaviour
         //수정된 블록을 다시 렌더러에 먹임
         myRenderer.SetPropertyBlock(_mpb);
     }
+
+    public void ChangeIconColor(Color32 color)
+    {
+        if (myRenderer == null) return;
+        myRenderer.GetPropertyBlock(_mpb);
+        _mpb.SetColor("_BaseColor", color);
+        myRenderer.SetPropertyBlock(_mpb);
+    }
 }

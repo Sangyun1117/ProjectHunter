@@ -19,7 +19,6 @@ public class HexTile : MonoBehaviour
 
     [Header("Tile Info")]
     public HexType hexType;
-    public bool isExplored = false;
 
     SpriteRenderer sr;
     MeshRenderer mr;
@@ -78,5 +77,17 @@ public class HexTile : MonoBehaviour
         }
         icon.SetTileIcon(hexType);
         SetName();
+    }
+
+    public void Explore()
+    {
+        visitCount++;
+        if(hexType == HexType.Empty || hexType == HexType.Start)
+        {
+            return;
+        }
+        mr.materials[0].SetColor("_BaseColor", new Color32(82, 86, 92, 140));
+        mr.materials[1].SetColor("_BaseColor", new Color32(82, 86, 92, 140));
+        icon.ChangeIconColor(new Color32(170, 174, 180, 190));
     }
 }
