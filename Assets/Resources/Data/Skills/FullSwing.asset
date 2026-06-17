@@ -35,6 +35,11 @@ MonoBehaviour:
       mpMultiplier: 0
       defenseMultiplier: 0
       magicDefenseMultiplier: 0
+  castFeedbacks: []
+  hitFeedbacks:
+  - {fileID: 11400000, guid: 0590135564905f841893c16be6026d08, type: 2}
+  - {fileID: 11400000, guid: 487773db77bfd9b418ad97419ae708e8, type: 2}
+  - {fileID: 11400000, guid: 6486a88594c40bf4ba477c740ce47cf7, type: 2}
   mpCost: 30
   casterEffectPrefab: {fileID: 0}
   targetEffectPrefab: {fileID: 879681129677348344, guid: 410e81cb9f6ee854eb1cfb221eaf7970, type: 3}

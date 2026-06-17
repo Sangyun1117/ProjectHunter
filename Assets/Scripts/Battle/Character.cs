@@ -27,7 +27,7 @@ public abstract class Character : MonoBehaviour
 
     public abstract void Attack();
 
-    public void ChangeHP(float amount)
+    virtual public void ChangeHP(float amount)
     {
         stats.ChangeHP(amount);
     }
@@ -63,8 +63,9 @@ public abstract class Character : MonoBehaviour
                 }
             }
 
-            //Vector3 effectPos = transform.position;
-            //Instantiate(BattleManager.Instance.NowPhaseSkill.TargetEffectPrefab, effectPos, Quaternion.identity);
+            // 피격 시 피드백 재생
+            BattleManager.Instance.NowPhaseSkill.HitFeedbacks.ForEach(feedback => feedback.Play());
+
         }
         else if (state == BattleAnimState.Attack || state == BattleAnimState.Concentrate || state == BattleAnimState.Interrupt)
         {

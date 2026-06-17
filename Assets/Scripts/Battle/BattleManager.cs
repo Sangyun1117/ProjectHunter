@@ -15,9 +15,12 @@ public class BattleManager : MonoBehaviour
     [SerializeField] private SkillData nowPhaseSkill;
     public SkillData NowPhaseSkill => nowPhaseSkill;
 
+    private VignetteBlink vignetteBlink;
+
     private void Awake()
     {
         Instance = this;
+        vignetteBlink = GetComponent<VignetteBlink>();
     }
     void Start()
     {
@@ -144,6 +147,8 @@ public class BattleManager : MonoBehaviour
 
     public IEnumerator EndBattle()
     {
+        // 전투 종료 시 비네트 깜빡임 중지
+        StopVignetteBlink();
         // 승리/패배 처리
         if (player.IsDead)
         {
@@ -161,5 +166,23 @@ public class BattleManager : MonoBehaviour
         }
         // 씬 전환 등 추가 처리
         SceneTransitionManager.Instance?.ReturnToMapScene();
+    }
+
+    public void StartVignetteBlink()
+    {
+        if (vignetteBlink == null)
+        {
+            return;
+        }
+        vignetteBlink.StartBlinking();
+    }
+
+    public void StopVignetteBlink()
+    {
+        if (vignetteBlink == null)
+        {
+            return;
+        }
+        vignetteBlink.StopBlinking();
     }
 }

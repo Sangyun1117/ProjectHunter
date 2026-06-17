@@ -28,13 +28,15 @@ MonoBehaviour:
       magicDefenseMultiplier: 0
   - effect: {fileID: 11400000, guid: efc5aa48ed6177146b7bea49cb910603, type: 2}
     param:
-      basePower: 10
+      basePower: 100
       attackMultiplier: 0
       abilityPowerMultiplier: 0
       hpMultiplier: 0
       mpMultiplier: 0
       defenseMultiplier: 0
       magicDefenseMultiplier: 0
+  castFeedbacks: []
+  hitFeedbacks: []
   mpCost: 0
   casterEffectPrefab: {fileID: 6331275906715107345, guid: b692b14d0834408448196a09407bc267, type: 3}
   targetEffectPrefab: {fileID: 0}

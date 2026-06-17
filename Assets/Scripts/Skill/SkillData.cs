@@ -9,6 +9,8 @@ public class SkillData : ScriptableObject
     [SerializeField] private BattleAnimState animState;
     [SerializeField] private Sprite icon;
     [SerializeField] private List<SkillEffectEntry> effects;
+    [SerializeField] private List<SkillFeedback> castFeedbacks;
+    [SerializeField] private List<SkillFeedback> hitFeedbacks;
 
     [SerializeField] private float mpCost;
     [SerializeField] private GameObject casterEffectPrefab;
@@ -19,6 +21,9 @@ public class SkillData : ScriptableObject
     public BattleAnimState AnimState => animState;
     public Sprite Icon => icon;
     public List<SkillEffectEntry> Effects => effects;
+    public List<SkillFeedback> CastFeedbacks => castFeedbacks;
+    public List<SkillFeedback> HitFeedbacks => hitFeedbacks;
+
     public float MpCost => mpCost;
     public GameObject CasterEffectPrefab => casterEffectPrefab;
     public GameObject TargetEffectPrefab => targetEffectPrefab;

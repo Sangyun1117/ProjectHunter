@@ -18,7 +18,7 @@ public class Player : Character
         stats.Initialize(classData);
         playerHUD.Initialize(stats);
 
-        animator.runtimeAnimatorController = classData.animatorController;        
+        animator.runtimeAnimatorController = classData.animatorController;
     }
 
     public void UseSkill(int skillIndex)
@@ -30,5 +30,20 @@ public class Player : Character
     {
         Debug.Log("Player attacks!");
 
+    }
+
+    public override void ChangeHP(float amount)
+    {
+        base.ChangeHP(amount);
+
+        // HP가 일정 이하로 떨어지면 화면 가장자리가 붉게 깜빡임
+        if (Stats.currentHp / Stats.maxHp < 0.5f)
+        {
+            BattleManager.Instance.StartVignetteBlink();
+        }
+        else
+        {
+            BattleManager.Instance.StopVignetteBlink();
+        }
     }
 }
